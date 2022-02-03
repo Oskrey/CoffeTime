@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Coffe time</string>
+    <string name="money_btn">Внести деньги</string>
+    <string name="inserted_money">"Баланс: "</string>
+    <string name="cappuccino">Капучино за 130₽</string>
+    <string name="espresso">Эспрессо за 80₽</string>
+    <string name="americano">Американо за 100₽</string>
+    <string name="latte">Латте за 140₽</string>
+    <string name="hot_chocolate">Горячий шоколад за 250₽</string>
+    <string name="brew">Сварить</string>
+</resources>

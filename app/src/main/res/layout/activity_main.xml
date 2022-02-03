@@ -6,13 +6,93 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:onClick="getMoney"
+        android:text="@string/money_btn"
+        app:layout_constraintTop_toBottomOf="@+id/balance"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <RadioGroup
+        android:id="@+id/Coffe"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button">
+
+        <RadioButton
+            android:id="@+id/Сappuccino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cappuccino"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/Espresso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/espresso"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/Americano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/americano"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/Latte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/latte"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/HotChocolate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hot_chocolate"
+            android:visibility="invisible" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="brew"
+        android:text="@string/brew"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

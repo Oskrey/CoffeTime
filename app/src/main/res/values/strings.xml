@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Coffe time</string>
+    <string name="money_btn">Insert money</string>
+    <string name="inserted_money">"Balance: "</string>
+    <string name="cappuccino">Сappuccino 130₽</string>
+    <string name="espresso">Espresso 80₽</string>
+    <string name="americano">Americano 100₽</string>
+    <string name="latte">Latte 140₽</string>
+    <string name="hot_chocolate">Hot chocolate 250₽</string>
+    <string name="brew">Brew</string>
 </resources>
